@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device name="appiumstartlist">
+    <deviceId id="0">
+        <deviceName>emulator-5554</deviceName>
+        <appiumPort>4490</appiumPort>
+    </deviceId>
+</Device>

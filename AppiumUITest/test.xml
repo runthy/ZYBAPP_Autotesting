@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="2">
+    <tests>
+                
+	  <test name="127.0.0.1:5555">
+     	<parameter name="a" value="16" />
+     	<parameter name="b" value="17" />
+        <classes>
+			<class name="cn.crazy.appium.testcases.Test111"/>
+            <class name="cn.crazy.appium.testcases.Test222"/>
+            <class name="cn.crazy.appium.testcases.Test333"/>
+        </classes>
+       </test>
+
+    <test name="127.0.0.1:5557">
+     	<parameter name="a" value="8"/>
+     	<parameter name="b" value="9"/>
+        <classes>
+			<class name="cn.crazy.appium.testcases.Test111"/>
+            <class name="cn.crazy.appium.testcases.Test222"/>
+            <class name="cn.crazy.appium.testcases.Test333"/>
+        </classes>
+    </test>
+    </tests>
+
+</suite>

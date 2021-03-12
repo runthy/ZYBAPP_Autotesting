@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="port" value="4490"/>
+  <parameter name="udid" value="192.168.56.101:5555"/>
+  <test name="192.168.56.101:5555(failed)" parallel="tests">
+    <parameter name="port" value="4490"/>
+    <parameter name="udid" value="192.168.56.101:5555"/>
+    <classes>
+      <class name="cn.crazy.appium.testcases.LxgTest">
+        <methods>
+          <include name="signTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- cn.crazy.appium.testcases.LxgTest -->
+    </classes>
+  </test> <!-- 192.168.56.101:5555(failed) -->
+</suite> <!-- Failed suite [Suite] -->

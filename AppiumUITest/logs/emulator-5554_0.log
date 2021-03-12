@@ -1,0 +1,1145 @@
+[35m[Appium][39m Welcome to Appium v1.10.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 4490
+[35m[Appium][39m   bootstrapPort: 2233
+[35m[Appium][39m   udid: emulator-5554
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"emulator-5554"}'
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   udid: emulator-5554
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4490
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.tal.kaoyan","appActivity":"com.tal.kaoyan.ui.activity.SplashActivity","noReset":"True","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"emulator-5554","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.tal.kaoyan","appActivity":"com.tal.kaoyan.ui.activity.SplashActivity","noReset":"True","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"emulator-5554","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1615465822043 (20:30:22 GMT+0800 (China Standard Time))
+[35m[Appium][39m Creating new AndroidDriver (v4.8.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   udid: emulator-5554
+[35m[Appium][39m   appPackage: com.tal.kaoyan
+[35m[Appium][39m   appActivity: com.tal.kaoyan.ui.activity.SplashActivity
+[35m[Appium][39m   noReset: True
+[35m[Appium][39m   noSign: True
+[35m[Appium][39m   newCommandTimeout: 600
+[35m[Appium][39m   unicodeKeyboard: True
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   deviceName: devicename
+[35m[Appium][39m   resetKeyboard: True
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"udid":"emulator-5554","ap...
+[35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'newCommandTimeout' changed from string ('600') to integer (600). This may cause unexpected behavior
+[35m[BaseDriver][39m Session created with session id: 3bfb4c58-56d0-4d1d-a25d-4d73a903824a
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Cannot sort build-tools folders ["25.0.0","28.0.2","28.0.3","29.0.2","android-4.4"] by semantic version names.
+[35m[ADB][39m Falling back to sorting by modification date. Original error: Invalid Version: android-4.4
+[35m[ADB][39m Found 5 'build-tools' folders under '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk' (newest first):
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/29.0.2
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/28.0.2
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/25.0.0
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/28.0.3
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/android-4.4
+[35m[ADB][39m Using adb from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[35m[AndroidDriver][39m Using device: emulator-5554
+[debug] [35m[ADB][39m Setting device id to emulator-5554
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 23
+[debug] [35m[ADB][39m Device API level: 23
+[35m[AndroidDriver][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.tal.kaoyan directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list packages com.tal.kaoyan'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/29.0.2/aapt
+[debug] [35m[ADB][39m The version code of the installed 'io.appium.settings' is greater than the application version code (17 > 15)
+[debug] [35m[ADB][39m There is no need to install/upgrade '/usr/local/lib/node_modules/appium/node_modules/_io.appium.settings@2.12.1@io.appium.settings/apks/settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \^io\\.appium\\.settings\$'
+[35m[AndroidDriver][39m Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+[debug] [35m[ADB][39m Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell appops set io.appium.settings android\:mock_location allow'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell settings get secure default_input_method'
+[debug] [35m[AndroidDriver][39m Unsetting previous IME com.netease.nemu_vinput.nemu/com.android.inputmethodcommon.SoftKeyboard
+[debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime enable io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set io.appium.settings/.UnicodeIME'
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell wm size'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': MuMu
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': Netease
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 2233 to device: 4724
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp\:2233 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 push /usr/local/lib/node_modules/appium/node_modules/_appium-android-driver\@4.8.0\@appium-android-driver/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pgrep -f \^uiautomator\$'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.tal.kaoyan","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Loading json...
+[35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n com.tal.kaoyan/com.tal.kaoyan.ui.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[35m[Appium][39m New AndroidDriver session created successfully, session 3bfb4c58-56d0-4d1d-a25d-4d73a903824a added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1615465829751 (20:30:29 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (3bfb4c58)][39m Cached the protocol value 'MJSONWP' for the new session 3bfb4c58-56d0-4d1d-a25d-4d73a903824a
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5554","appPackage":"com.tal.kaoyan","appActivity":"com.tal.kaoyan.ui.activity.SplashActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"devicename","resetKeyboard":true},"udid":"emulator-5554","appPackage":"com.tal.kaoyan","appActivity":"com.tal.kaoyan.ui.activity.SplashActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"emulator-5554","resetKeyboard":true,"deviceUDID":"emulator-5554","platformVersion":"6.0.1","deviceScreenSize":"1440x1700","deviceModel":"MuMu","deviceManufacturer":"Netease"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m7716 ms - 938[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":5000}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.timeouts() with args: ["implicit",5000,null,null,null,"3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m MJSONWP timeout arguments: {"type":"implicit","ms":5000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 5000ms
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/timeouts [39m[32m200[39m [90m21 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m37 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m35 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m31 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m43 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m36 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m44 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"1","ELEMENT":"1"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m41 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2","ELEMENT":"2"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m11 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/2/value[39m
+[35m[HTTP][39m [90m{"id":"2","value":["shizerun1"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["shizerun1"],"2","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"shizerun1","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"2","text":"shizerun1","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 2
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: shizerun1
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/2/value [39m[32m200[39m [90m4918 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"3","ELEMENT":"3"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m532 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"4"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"4","ELEMENT":"4"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m35 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/4/value[39m
+[35m[HTTP][39m [90m{"id":"4","value":["asd123456"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["asd123456"],"4","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"4","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"4","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 4
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: asd123456
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/4/value [39m[32m200[39m [90m5136 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_login_btn"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_login_btn","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_login_btn' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_login_btn]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"5"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5","ELEMENT":"5"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m569 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/5/click[39m
+[35m[HTTP][39m [90m{"id":"5"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.click() with args: ["5","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"5"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/5/click [39m[32m200[39m [90m152 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m30 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m27 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAF1h0lEQVR4AezBC5Td9WHY+e/v9//fe2fuPPRghF48BRJgY4TBr9jYYBNcTInrJmk2dk6TTXYTb0/29Oy67unjdGvYPs7mAT3tJj1NnPbEbrz2dpPYiVmnji2HhxwTMA9hJIMEEiD0Ho00c2fuzL33////tpAVGRRJCNAdDfD9fMK7fmN/QpIkSZIkSZKkMywiSZIkSZIkSVIfRCRJkiRJkiRJ6oOIJEmSJEmSJEl9EJEkSZIkSZIkqQ8ikiRJkiRJkiT1QUSSJEmSJEmSpD6ISJIkSZIkSZLUBxFJkiRJkiRJkvogIkmSJEmSJElSH0QkSZIkSZIkSeqDnDeIADTywIrhyEVLc9YuyVg6EKlFaPcSh2Yqnj1a8PxkyeRcRVEhSZIkSZIkSTqLct4AYoALlubceEmD913QYM1IJI+BGHlRSlAlaHcT2w/3+M7THf5id5epuYqEJEmSJEmSJOlsyFnkGnng3WvrfOrqJpeN5RyYrrh7V4etB3ocmK7oFomRgcgFSzOuXVPnqlV13rGyxqanO/zB47PsniyoEpIkSZIkSdKC2DCWM1yPTHcrto8XvFFtGMtZPZKxYSzn2rV1XrBmNGP1SMbx9rVK9k6VvOChPV22jxfsa5VsHy/QW1vOIjZYC9x4yQB/951NhuuBr22b5dtPd3j2SEGnTFQVJCAG+P7zgW/tmOPtK2v87bcP8rHLBlg1kvE7D06zY7wgIUmSJEmSJJ15G8Zybr18kBvWNVg9knG8fa2Su3d2uOuJWbaPFyxWI43A9RcPcP3FDW5Y1+DVWD2SsXok4wXXrq0z3907O9yzq8M9u+ZodRJ6a8lZpALwzjV1fuHaIWKE//DADN/cPke3TByvStAtE4fbiXt3dXj6cMHPXzvERy4ZYLrT5N/++TSTcxWSJEmSJEnSmbJhLOcz141w7do6p7J6JOOTG5t8cmOTh/Z0uXNzi+3jBYvFrZcP...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m1656 ms - 127650[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAF1w0lEQVR4AezBC5Td9WHY+e/v9//fe2fuPPRghF48BRJgY4TBr9jYYBNcTInrJmk2dk6TTXYTb0/29Oy67unjdGvYPs7mAT3tJj1NnPbEbrz2dpPYiVmnji2HhxwTMA9hJIMEEiD0Ho00c2fuzL33////tpAVGRRJCNAdDfD9fMK7fmN/QpIkSZIkSZKkMywiSZIkSZIkSVIfRCRJkiRJkiRJ6oOIJEmSJEmSJEl9EJEkSZIkSZIkqQ8ikiRJkiRJkiT1QUSSJEmSJEmSpD6ISJIkSZIkSZLUBxFJkiRJkiRJkvogIkmSJEmSJElSH0QkSZIkSZIkSeqDnDeIADTywIrhyEVLc9YuyVg6EKlFaPcSh2Yqnj1a8PxkyeRcRVEhSZIkSZIkSTqLct4AYoALlubceEmD913QYM1IJI+BGHlRSlAlaHcT2w/3+M7THf5id5epuYqEJEmSJEmSJOlsyFnkGnng3WvrfOrqJpeN5RyYrrh7V4etB3ocmK7oFomRgcgFSzOuXVPnqlV13rGyxqanO/zB47PsniyoEpIkSZIkSdKC2DCWM1yPTHcrto8XvFFtGMtZPZKxYSzn2rV1XrBmNGP1SMbx9rVK9k6VvOChPV22jxfsa5VsHy/QW1vOIjZYC9x4yQB/951NhuuBr22b5dtPd3j2SEGnTFQVJCAG+P7zgW/tmOPtK2v87bcP8rHLBlg1kvE7D06zY7wgIUmSJEmSJJ15G8Zybr18kBvWNVg9knG8fa2Su3d2uOuJWbaPFyxWI43A9RcPcP3FDW5Y1+DVWD2SsXok4wXXrq0z3907O9yzq8M9u+ZodRJ6a8lZpALwzjV1fuHaIWKE//DADN/cPke3TByvStAtE4fbiXt3dXj6cMHPXzvERy4ZYLrT5N/++TSTcxWSJEmSJEnSmbJhLOcz141w7do6p7J6JOOTG5t8cmOTh/Z0uXNzi+3jBYvFrZcP...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m1650 ms - 127730[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m27 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m32 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m31 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m35 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m34 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m29 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"6"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"6","ELEMENT":"6"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m18 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"7"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"7","ELEMENT":"7"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m19 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/7/value[39m
+[35m[HTTP][39m [90m{"id":"7","value":["@!#$%^&中文"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["@!#$%^&中文"],"7","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"7","text":"@!#$%^&中文","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"7","text":"@!#$%^&中文","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 7
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by selecting all and deleting.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending Unicode text to element: @!#$%^&中文
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Encoded text: @!#$%^&-&Ti1lhw-
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/7/value [39m[32m200[39m [90m12669 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"8"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"8","ELEMENT":"8"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m548 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"9"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"9","ELEMENT":"9"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m49 ms - 129[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/9/value[39m
+[35m[HTTP][39m [90m{"id":"9","value":["asd123456"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["asd123456"],"9","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"9","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"9","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 9
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: asd123456
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/9/value [39m[32m200[39m [90m5319 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_login_btn"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_login_btn","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_login_btn' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_login_btn]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"10"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"10","ELEMENT":"10"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m598 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/10/click[39m
+[35m[HTTP][39m [90m{"id":"10"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.click() with args: ["10","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/10/click [39m[32m200[39m [90m132 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m50 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m30 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAGNcUlEQVR4AezBC7Rd5WHY+f/37X0e99yHXlfoxVMgIduAMDI2trHBIaQ2JV5pm3bitM1rNaEZz8p0XNrOTNeqcefVR2AmfaypnU7bpONld01T2wm1mziywcixDeZpwCCBhNFburq69577Oufsvb8ppKIXWRKS0bmS8P/3C+/6ZwcSkiRJkiRJkiSdZRFJkiRJkiRJkvogIkmSJEmSJElSH0QkSZIkSZIkSeqDiCRJkiRJkiRJfRCRJEmSJEmSJKkPIpIkSZIkSZIk9UFEkiRJkiRJkqQ+iEiSJEmSJEmS1AcRSZIkSZIkSZL6ICJJkiRJkiRJUh/kXCAC0MgDK4cily/NWbckY2kzUosw20scnqn4wUTBnsmSyfmKokKSJEmSJEmSdA7lXABigEuX5tx2ZYObLm2wdjiSx0CMvColqBLMdhPbj/T42osdvrO7y9R8RUKSJEmSJEmSdC7knOcaeeDGdXV+/voWV4/mHJyueGBXh2cO9jg4XdEtEsPNyKVLM7asrXPd6jrXrqqx9cUOv/f0HLsnC6qEJEmSJEmStCg2juYM1SPT3YrtYwUXqo2jOWuGMzaO5mxZV+cVa0cy1gxnHG9/u2TfVMkrHt3bZftYwf52yfaxAv14yzmPDdQCt13Z5K++s8VQPfDFZ+f44xc7/OBoQadMVBUkIAb47p7AV3fM845VNf7cOwb4yNVNVg9n/MtHptkxVpCQJEmSJEmSzr6Nozl3bhrg1vUN1gxnHG9/u+SBnR3uf26O7WMF56vhRuCWK5rcckWDW9c3OBNrhjPWDGe8Ysu6Ogs9sLPDg7s6PLhrnnYnoR8vOeepALxzbZ1f2TJIjPAvHp7hD7fP0y0Tx6sSdMvEkdnEN3Z1ePFIwS9vGeQnrmwy3WnxW38yzeR8hSRJkiRJknS2bBzN+cTNw2xZV+dU1gxnfGxzi49tbvHo3i73bWuzfazgfHHnpgHu3NRk...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m1632 ms - 135810[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAGNoklEQVR4AezBC7Rd5WHY+f/37X0e99yHXlfoxVMgIduAMDI2trHBIaQ2JV5pm3bitM1rNaEZz8p0XNrOTNeqcefVR2AmfaypnU7bpONld01T2wm1mziywcixDeZpwCCBhNFburq69577Oufsvb8ppKIXWRKS0bmS8P/3C+/6ZwcSkiRJkiRJkiSdZRFJkiRJkiRJkvogIkmSJEmSJElSH0QkSZIkSZIkSeqDiCRJkiRJkiRJfRCRJEmSJEmSJKkPIpIkSZIkSZIk9UFEkiRJkiRJkqQ+iEiSJEmSJEmS1AcRSZIkSZIkSZL6ICJJkiRJkiRJUh/kXCAC0MgDK4cily/NWbckY2kzUosw20scnqn4wUTBnsmSyfmKokKSJEmSJEmSdA7lXABigEuX5tx2ZYObLm2wdjiSx0CMvColqBLMdhPbj/T42osdvrO7y9R8RUKSJEmSJEmSdC7knOcaeeDGdXV+/voWV4/mHJyueGBXh2cO9jg4XdEtEsPNyKVLM7asrXPd6jrXrqqx9cUOv/f0HLsnC6qEJEmSJEmStCg2juYM1SPT3YrtYwUXqo2jOWuGMzaO5mxZV+cVa0cy1gxnHG9/u2TfVMkrHt3bZftYwf52yfaxAv14yzmPDdQCt13Z5K++s8VQPfDFZ+f44xc7/OBoQadMVBUkIAb47p7AV3fM845VNf7cOwb4yNVNVg9n/MtHptkxVpCQJEmSJEmSzr6Nozl3bhrg1vUN1gxnHG9/u+SBnR3uf26O7WMF56vhRuCWK5rcckWDW9c3OBNrhjPWDGe8Ysu6Ogs9sLPDg7s6PLhrnnYnoR8vOeepALxzbZ1f2TJIjPAvHp7hD7fP0y0Tx6sSdMvEkdnEN3Z1ePFIwS9vGeQnrmwy3WnxW38yzeR8hSRJkiRJknS2bBzN+cTNw2xZV+dU1gxnfGxzi49tbvHo3i73bWuzfazgfHHnpgHu3NRk...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m2078 ms - 135878[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m50 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m32 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m48 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m36 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m46 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m112 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"11"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"11","ELEMENT":"11"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m66 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"12"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"12","ELEMENT":"12"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m36 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/12/value[39m
+[35m[HTTP][39m [90m{"id":"12","value":["shizerun1"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["shizerun1"],"12","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"12","text":"shizerun1","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"12","text":"shizerun1","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 12
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by selecting all and deleting.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by sending delete keys.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: shizerun1
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/12/value [39m[32m200[39m [90m20994 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"13","ELEMENT":"13"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m518 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"13"}}
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"14"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"14","ELEMENT":"14"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m66 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/14/value[39m
+[35m[HTTP][39m [90m{"id":"14","value":["asd123456"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["asd123456"],"14","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"14","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"14","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 14
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: asd123456
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/14/value [39m[32m200[39m [90m5417 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_login_btn"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_login_btn","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_login_btn' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_login_btn]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"15"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"15","ELEMENT":"15"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m596 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/15/click[39m
+[35m[HTTP][39m [90m{"id":"15"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.click() with args: ["15","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"15"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/15/click [39m[32m200[39m [90m182 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m148 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m65 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAF/F0lEQVR4AezBDZSd5WHY+f/zvO+9d+bOhz4YoS8+BUKyDQgj4w+MA7ZDarvEJ22Tbuy2SZrThNPjPd0cx93t6Z5Tm7bbPW0D2+5pexJ7t22S9cHbJseOw9ppbNlg5NgGgxEGWUggAULfo9HM3Pm6977v+2zBFR3kQQijOxqJ/+8X3vFvDickSZIkSZIkSTrLIpIkSZIkSZIk9UBEkiRJkiRJkqQeiEiSJEmSJEmS1AMRSZIkSZIkSZJ6ICJJkiRJkiRJUg9EJEmSJEmSJEnqgYgkSZIkSZIkST0QkSRJkiRJkiSpByKSJEmSJEmSJPVARJIkSZIkSZKkHsg5TwSgkQdWDUauWJ6zflnG8r5ILcJMN3FsuuK58YIXJkom5iqKCkmSJEmSJEnSOZRzHogBLlue88GrGrz7sgbrhiJ5DMTIS1KCKsFMJ7H7eJdvPNPme/s7TM5VJCRJkiRJkiRJ50LOEtfIAzetr/PxG5psGsk5MlVx/742Tx7pcmSqolMkhvoily3P2LquzvVr6ly3usa2Z9r88ROz7J8oqBKSJEmSJEnSorhmJGewHpnqVOweLThfXTOSs3Yo45qRnK3r67xo3XDG2qGMUx1qlRycLHnRIwc67B4tONQq2T1aoDe3nCWsvxb44FV9/K23NxmsB760c5avP9PmuRMF7TJRVZCAGOD7LwS+tmeOt62u8Vfe1s+HN/WxZijj/3p4ij2jBQlJkiRJkiTp7LtmJOeOzf3ctqHB2qGMUx1qldy/t819u2bZPVqwVA01Arde2cetVza4bUOD12PtUMbaoYwXbV1fZ77797Z5YF+bB/bN0Won9OaSs0QF4O3r6vz61gFihN99aJr/snuOTpk4VZWgUyaOzyS+ta/NM8cL/vbWAT5wVR9T7Sb/+i+mmJirkCRJkiRJks6Wa0ZyPnnLEFvX1zmdtUMZH9vS5GNbmjxyoMM921vsHi1YKu7Y...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m2058 ms - 130914[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAF/OklEQVR4AezBDZSd5WHY+f/zvO+9d+bOhz4YoS8+BUKyDQgj4w+MA7ZDarvEJ22Tbuy2SZrThNPjPd0cx93t6Z5Tm7bbPW0D2+5pexJ7t22S9cHbJseOw9ppbNlg5NgGgxEGWUggAULfo9HM3Pm6977v+2zBFR3kQQijOxqJ/+8X3vFvDickSZIkSZIkSTrLIpIkSZIkSZIk9UBEkiRJkiRJkqQeiEiSJEmSJEmS1AMRSZIkSZIkSZJ6ICJJkiRJkiRJUg9EJEmSJEmSJEnqgYgkSZIkSZIkST0QkSRJkiRJkiSpByKSJEmSJEmSJPVARJIkSZIkSZKkHsg5TwSgkQdWDUauWJ6zflnG8r5ILcJMN3FsuuK58YIXJkom5iqKCkmSJEmSJEnSOZRzHogBLlue88GrGrz7sgbrhiJ5DMTIS1KCKsFMJ7H7eJdvPNPme/s7TM5VJCRJkiRJkiRJ50LOEtfIAzetr/PxG5psGsk5MlVx/742Tx7pcmSqolMkhvoily3P2LquzvVr6ly3usa2Z9r88ROz7J8oqBKSJEmSJEnSorhmJGewHpnqVOweLThfXTOSs3Yo45qRnK3r67xo3XDG2qGMUx1qlRycLHnRIwc67B4tONQq2T1aoDe3nCWsvxb44FV9/K23NxmsB760c5avP9PmuRMF7TJRVZCAGOD7LwS+tmeOt62u8Vfe1s+HN/WxZijj/3p4ij2jBQlJkiRJkiTp7LtmJOeOzf3ctqHB2qGMUx1qldy/t819u2bZPVqwVA01Arde2cetVza4bUOD12PtUMbaoYwXbV1fZ77797Z5YF+bB/bN0Won9OaSs0QF4O3r6vz61gFihN99aJr/snuOTpk4VZWgUyaOzyS+ta/NM8cL/vbWAT5wVR9T7Sb/+i+mmJirkCRJkiRJks6Wa0ZyPnnLEFvX1zmdtUMZH9vS5GNbmjxyoMM921vsHi1YKu7Y...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m1529 ms - 130958[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m47 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m35 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m87 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m71 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m48 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m32 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"16"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"16","ELEMENT":"16"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m16 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"17"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"17","ELEMENT":"17"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m11 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/17/value[39m
+[35m[HTTP][39m [90m{"id":"17","value":["@!#$%^&中文"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["@!#$%^&中文"],"17","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"17","text":"@!#$%^&中文","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"17","text":"@!#$%^&中文","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 17
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by selecting all and deleting.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending Unicode text to element: @!#$%^&中文
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Encoded text: @!#$%^&-&Ti1lhw-
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/17/value [39m[32m200[39m [90m12994 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"18"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"18","ELEMENT":"18"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m513 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"19"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"19","ELEMENT":"19"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m42 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/19/value[39m
+[35m[HTTP][39m [90m{"id":"19","value":["asd123456"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["asd123456"],"19","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"19","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"19","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 19
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: asd123456
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/19/value [39m[32m200[39m [90m5276 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_login_btn"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_login_btn","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_login_btn' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_login_btn]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"20"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"20","ELEMENT":"20"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m615 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/20/click[39m
+[35m[HTTP][39m [90m{"id":"20"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.click() with args: ["20","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"20"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"20"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/20/click [39m[32m200[39m [90m215 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m105 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m71 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAGVmUlEQVR4AezBDZSd5WHY+f/zvO+9d+bOhz4YoS8+BUKyDQgj4w+MA7ZDarvEJ22Tbuy2SZrThNPjPd0cx93t6Z5Tm7bbPW0D2+5pexJ7t22S9cHbJseOw9ppbNlg5NgGgxEGWUggAULfo9HM3Pm6977v+2zBFR3kQQijOxqJ/+8X3vFvDickSZIkSZIkSTrLIpIkSZIkSZIk9UBEkiRJkiRJkqQeiEiSJEmSJEmS1AMRSZIkSZIkSZJ6ICJJkiRJkiRJUg9EJEmSJEmSJEnqgYgkSZIkSZIkST0QkSRJkiRJkiSpByKSJEmSJEmSJPVARJIkSZIkSZKkHsg5TwSgkQdWDUauWJ6zflnG8r5ILcJMN3FsuuK58YIXJkom5iqKCkmSJEmSJEnSOZRzHogBLlue88GrGrz7sgbrhiJ5DMTIS1KCKsFMJ7H7eJdvPNPme/s7TM5VJCRJkiRJkiRJ50LOEtfIAzetr/PxG5psGsk5MlVx/742Tx7pcmSqolMkhvoily3P2LquzvVr6ly3usa2Z9r88ROz7J8oqBKSJEmSJEnSorhmJGewHpnqVOweLThfXTOSs3Yo45qRnK3r67xo3XDG2qGMUx1qlRycLHnRIwc67B4tONQq2T1aoDe3nCWsvxb44FV9/K23NxmsB760c5avP9PmuRMF7TJRVZCAGOD7LwS+tmeOt62u8Vfe1s+HN/WxZijj/3p4ij2jBQlJkiRJkiTp7LtmJOeOzf3ctqHB2qGMUx1qldy/t819u2bZPVqwVA01Arde2cetVza4bUOD12PtUMbaoYwXbV1fZ77797Z5YF+bB/bN0Won9OaSs0QF4O3r6vz61gFihN99aJr/snuOTpk4VZWgUyaOzyS+ta/NM8cL/vbWAT5wVR9T7Sb/+i+mmJirkCRJkiRJks6Wa0ZyPnnLEFvX1zmdtUMZH9vS5GNbmjxyoMM921vsHi1YKu7Y...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m2173 ms - 138594[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getScreenshot() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAakCAYAAAAC2bxDAAGVmUlEQVR4AezBDZSd5WHY+f/zvO+9d+bOhz4YoS8+BUKyDQgj4w+MA7ZDarvEJ22Tbuy2SZrThNPjPd0cx93t6Z5Tm7bbPW0D2+5pexJ7t22S9cHbJseOw9ppbNlg5NgGgxEGWUggAULfo9HM3Pm6977v+2zBFR3kQQijOxqJ/+8X3vFvDickSZIkSZIkSTrLIpIkSZIkSZIk9UBEkiRJkiRJkqQeiEiSJEmSJEmS1AMRSZIkSZIkSZJ6ICJJkiRJkiRJUg9EJEmSJEmSJEnqgYgkSZIkSZIkST0QkSRJkiRJkiSpByKSJEmSJEmSJPVARJIkSZIkSZKkHsg5TwSgkQdWDUauWJ6zflnG8r5ILcJMN3FsuuK58YIXJkom5iqKCkmSJEmSJEnSOZRzHogBLlue88GrGrz7sgbrhiJ5DMTIS1KCKsFMJ7H7eJdvPNPme/s7TM5VJCRJkiRJkiRJ50LOEtfIAzetr/PxG5psGsk5MlVx/742Tx7pcmSqolMkhvoily3P2LquzvVr6ly3usa2Z9r88ROz7J8oqBKSJEmSJEnSorhmJGewHpnqVOweLThfXTOSs3Yo45qRnK3r67xo3XDG2qGMUx1qlRycLHnRIwc67B4tONQq2T1aoDe3nCWsvxb44FV9/K23NxmsB760c5avP9PmuRMF7TJRVZCAGOD7LwS+tmeOt62u8Vfe1s+HN/WxZijj/3p4ij2jBQlJkiRJkiTp7LtmJOeOzf3ctqHB2qGMUx1qldy/t819u2bZPVqwVA01Arde2cetVza4bUOD12PtUMbaoYwXbV1fZ77797Z5YF+bB/bN0Won9OaSs0QF4O3r6vz61gFihN99aJr/snuOTpk4VZWgUyaOzyS+ta/NM8cL/vbWAT5wVR9T7Sb/+i+mmJirkCRJkiRJks6Wa0ZyPnnLEFvX1zmdtUMZH9vS5GNbmjxyoMM921vsHi1YKu7Y...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/screenshot [39m[32m200[39m [90m1552 ms - 138594[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m88 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m51 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m53 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m46 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m60 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.activity.ucenter.LoginActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m64 ms - 108[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"21"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"21","ELEMENT":"21"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m67 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_email_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_email_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_email_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_email_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_email_edittext]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"22"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"22","ELEMENT":"22"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m16 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/22/value[39m
+[35m[HTTP][39m [90m{"id":"22","value":["shizerun1"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["shizerun1"],"22","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"22","text":"shizerun1","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"22","text":"shizerun1","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 22
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by selecting all and deleting.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Clearing text not successful. Attempting to clear by sending delete keys.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: shizerun1
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/22/value [39m[32m200[39m [90m17650 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"23"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"23","ELEMENT":"23"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m1093 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_password_edittext"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_password_edittext","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_password_edittext","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_password_edittext' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_password_edittext]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"24"}}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"24","ELEMENT":"24"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m127 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/24/value[39m
+[35m[HTTP][39m [90m{"id":"24","value":["asd123456"]}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.setValue() with args: [["asd123456"],"24","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"24","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"24","text":"asd123456","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 24
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: asd123456
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/24/value [39m[32m200[39m [90m6093 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.tal.kaoyan:id/login_login_btn"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.findElement() with args: ["id","com.tal.kaoyan:id/login_login_btn","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 5000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.tal.kaoyan:id/login_login_btn","context":"","multiple":false}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'com.tal.kaoyan:id/login_login_btn' using 'ID' with the contextId: '' multiple: false
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.tal.kaoyan:id/login_login_btn]
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"25"}}
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"25","ELEMENT":"25"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element [39m[32m200[39m [90m89053 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/25/click[39m
+[35m[HTTP][39m [90m{"id":"25"}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.click() with args: ["25","3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"25"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"25"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/element/25/click [39m[32m200[39m [90m1220 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[MJSONWP (3bfb4c58)][39m Responding to client with driver.getCurrentActivity() result: ".ui.AccountExpiredUI"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[32m200[39m [90m4437 ms - 94[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (3bfb4c58)][39m Calling AppiumDriver.getCurrentActivity() with args: ["3bfb4c58-56d0-4d1d-a25d-4d73a903824a"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows'
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[AndroidDriver][39m Resetting IME to com.netease.nemu_vinput.nemu/com.android.inputmethodcommon.SoftKeyboard
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell ime set com.netease.nemu_vinput.nemu/com.android.inputmethodcommon.SoftKeyboard'
+[35m[Appium][39m Received SIGINT - shutting down
+[35m[Appium][39m Closing session, cause was 'UiAUtomator shut down unexpectedly'
+[35m[Appium][39m Removing session 3bfb4c58-56d0-4d1d-a25d-4d73a903824a from our master session list
+[debug] [35m[MJSONWP (3bfb4c58)][39m Encountered internal error running command: Error: Could not get focusPackageAndActivity. Original error: Error executing adbExec. Original error: 'Command '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window windows' exited with code null'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+[debug] [35m[MJSONWP (3bfb4c58)][39m     at ADB.apkUtilsMethods.getFocusedPackageAndActivity (/usr/local/lib/node_modules/appium/node_modules/_appium-adb@7.2.0@appium-adb/lib/tools/apk-utils.js:197:11)
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/3bfb4c58-56d0-4d1d-a25d-4d73a903824a/appium/device/current_activity [39m[31m500[39m [90m3886 ms - 531[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.tal.kaoyan'
+[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell input keyevent 3'
+[35m[AndroidBootstrap][39m Cannot shut down Android bootstrap; it has already shut down
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[Logcat][39m Logcat already stopped
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.unlock'
+[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.

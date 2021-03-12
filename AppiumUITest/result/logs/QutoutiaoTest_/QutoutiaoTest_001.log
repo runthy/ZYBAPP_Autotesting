@@ -1,0 +1,22 @@
+[2019-01-28 16:09:05] [INFO] 获取设备默认输入法:adb -s 127.0.0.1:5555 shell "settings get secure default_input_method"
+[2019-01-28 16:09:05] [INFO] 连接127.0.0.1:5555端口4723
+[2019-01-28 16:09:05] [INFO] 开始创建server连接
+[2019-01-28 16:09:09] [INFO] 执行测试test
+[2019-01-28 16:09:21] [INFO] 新闻数量【0】
+[2019-01-28 16:09:22] [INFO] 点击元素 [[[AndroidDriverBase: Android on LINUX (f32c51cb-b9aa-485f-bb61-4516352d83c2)] -> id: com.jifen.qukan:id/aas]]
+[2019-01-28 16:09:34] [INFO] 手势往down滑动成功
+[2019-01-28 16:09:34] [WARN] 不存在红包图标
+[2019-01-28 16:09:35] [INFO] 手势往up0滑动成功
+[2019-01-28 16:09:35] [INFO] 手势往up1滑动成功
+[2019-01-28 16:09:47] [INFO] 新闻数量【0】
+[2019-01-28 16:09:48] [INFO] 点击元素 [[[AndroidDriverBase: Android on LINUX (f32c51cb-b9aa-485f-bb61-4516352d83c2)] -> id: com.jifen.qukan:id/aas]]
+[2019-01-28 16:09:58] [INFO] 手势往down滑动成功
+[2019-01-28 16:09:58] [WARN] 不存在红包图标
+[2019-01-28 16:09:59] [INFO] 手势往up0滑动成功
+[2019-01-28 16:10:00] [INFO] 手势往up1滑动成功
+[2019-01-28 16:10:12] [INFO] 新闻数量【0】
+[2019-01-28 16:10:13] [INFO] 点击元素 [[[AndroidDriverBase: Android on LINUX (f32c51cb-b9aa-485f-bb61-4516352d83c2)] -> id: com.jifen.qukan:id/aas]]
+[2019-01-28 16:10:24] [INFO] 手势往down滑动成功
+[2019-01-28 16:10:24] [WARN] 不存在红包图标
+[2019-01-28 16:10:25] [INFO] 手势往up0滑动成功
+[2019-01-28 16:10:25] [INFO] 手势往up1滑动成功

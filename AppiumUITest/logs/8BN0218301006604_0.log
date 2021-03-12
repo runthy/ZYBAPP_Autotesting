@@ -1,0 +1,342 @@
+[35m[Appium][39m Welcome to Appium v1.10.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 4490
+[35m[Appium][39m   bootstrapPort: 2233
+[35m[Appium][39m   udid: 8BN0218301006604
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"8BN0218301006604"}'
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   udid: 8BN0218301006604
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4490
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"8BN0218301006604","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"8BN0218301006604","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1557758265309 (22:37:45 GMT+0800 (China Standard Time))
+[35m[Appium][39m Creating new AndroidDriver (v4.8.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   udid: 8BN0218301006604
+[35m[Appium][39m   appPackage: com.shenqi.app.client
+[35m[Appium][39m   appActivity: com.shenqi.app.client.MainActivity
+[35m[Appium][39m   noSign: True
+[35m[Appium][39m   newCommandTimeout: 600
+[35m[Appium][39m   unicodeKeyboard: True
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   deviceName: devicename
+[35m[Appium][39m   resetKeyboard: True
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"udid":"8BN0218301006604",...
+[35m[BaseDriver][39m Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'newCommandTimeout' changed from string ('600') to integer (600). This may cause unexpected behavior
+[35m[BaseDriver][39m Session created with session id: d70adc6d-2877-4ad0-83aa-c0f51bdbb566
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Cannot sort build-tools folders ["28.0.3","android-4.4"] by semantic version names.
+[35m[ADB][39m Falling back to sorting by modification date. Original error: Invalid Version: android-4.4
+[35m[ADB][39m Found 2 'build-tools' folders under '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk' (newest first):
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/28.0.3
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/android-4.4
+[35m[ADB][39m Using adb from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[35m[AndroidDriver][39m Using device: 8BN0218301006604
+[debug] [35m[ADB][39m Setting device id to 8BN0218301006604
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 28
+[debug] [35m[ADB][39m Device API level: 28
+[35m[AndroidDriver][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.shenqi.app.client directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell pm list packages com.shenqi.app.client'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 wait-for-device'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is not installed
+[debug] [35m[ADB][39m App '/usr/local/lib/node_modules/appium/node_modules/_io.appium.settings@2.12.1@io.appium.settings/apks/settings_apk-debug.apk' is not installed
+[debug] [35m[ADB][39m Installing '/usr/local/lib/node_modules/appium/node_modules/_io.appium.settings@2.12.1@io.appium.settings/apks/settings_apk-debug.apk'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 install -g /usr/local/lib/node_modules/appium/node_modules/_io.appium.settings\@2.12.1\@io.appium.settings/apks/settings_apk-debug.apk'
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell pgrep -f \^io\\.appium\\.settings\$'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell appops set io.appium.settings android\:mock_location allow'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell settings get secure default_input_method'
+[debug] [35m[AndroidDriver][39m Unsetting previous IME com.baidu.input_huawei/.ImeService
+[debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell ime enable io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell ime set io.appium.settings/.UnicodeIME'
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 9
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell wm size'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': STF-AL00
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': HUAWEI
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.shenqi.app.client
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell dumpsys package com.shenqi.app.client'
+[debug] [35m[ADB][39m 'com.shenqi.app.client' is installed
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell am force-stop com.shenqi.app.client'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell pm clear com.shenqi.app.client'
+[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.shenqi.app.client' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 2233 to device: 4724
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 forward tcp\:2233 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 push /usr/local/lib/node_modules/appium/node_modules/_appium-android-driver\@4.8.0\@appium-android-driver/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell pgrep -f \^uiautomator\$'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","8BN0218301006604","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.shenqi.app.client","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell am start -W -n com.shenqi.app.client/com.shenqi.app.client.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[35m[Appium][39m New AndroidDriver session created successfully, session d70adc6d-2877-4ad0-83aa-c0f51bdbb566 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1557758288027 (22:38:08 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (d70adc6d)][39m Cached the protocol value 'MJSONWP' for the new session d70adc6d-2877-4ad0-83aa-c0f51bdbb566
+[debug] [35m[MJSONWP (d70adc6d)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"8BN0218301006604","appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"devicename","resetKeyboard":true},"udid":"8BN0218301006604","appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"8BN0218301006604","resetKeyboard":true,"deviceUDID":"8BN0218301006604","platformVersion":"9","deviceScreenSize":"1080x1920","deviceModel":"STF-AL00","deviceManufacturer":"HUAWEI"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m22726 ms - 919[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":10000}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.timeouts() with args: ["implicit",10000,null,null,null,"d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m MJSONWP timeout arguments: {"type":"implicit","ms":10000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 10000ms
+[debug] [35m[MJSONWP (d70adc6d)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/timeouts [39m[32m200[39m [90m19 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.getCurrentActivity() with args: ["d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell dumpsys window windows'
+[debug] [35m[MJSONWP (d70adc6d)][39m Responding to client with driver.getCurrentActivity() result: ".MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/appium/device/current_activity [39m[32m200[39m [90m121 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.getCurrentActivity() with args: ["d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell dumpsys window windows'
+[debug] [35m[MJSONWP (d70adc6d)][39m Responding to client with driver.getCurrentActivity() result: ".MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/appium/device/current_activity [39m[32m200[39m [90m101 ms - 87[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m12 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m3 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m6 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m4 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m5 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m5 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"首页"}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.findElement() with args: ["name","首页","d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (d70adc6d)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (d70adc6d)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/element [39m[31m500[39m [90m9 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.getScreenshot() with args: ["d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[35m[AndroidDriver][39m Cannot get screenshot data with 'adb exec-out' because of 'Command '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 exec-out /system/bin/screencap -p' exited with code 1'. Defaulting to 'adb shell' call
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell /system/bin/rm /data/local/tmp/screenshot.png\; /system/bin/screencap -p /data/local/tmp/screenshot.png'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell ls -la /data/local/tmp/screenshot.png'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 pull /data/local/tmp/screenshot.png /var/folders/s6/pgcj1l550z31yv_60yhw4m4h0000gp/T/appium119413-16092-5uoj5d.9u0ia.png'
+[debug] [35m[MJSONWP (d70adc6d)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAAQKEklEQVR4AezBCXzU9Z34/9fnO/dMEjJJJoEkhMMQAiThkgJyKKBSAa2C13psa+nWx2rdVsVjf4+u+++uD1db29q61VoP1l7WVsUDQYscchQw3AIid8gBgdyTc2a+3/efwY6GGI4ECMR+nk8FCJqmaZqmaZqmaZqmad2YgaZpmqZpmqZpmqZpWjdnoGmapmmapmmapmma1s0ZaJqmaZqmaZqmaZqmdXMGmqZpmqZpmqZpmqZp3ZyBpmmapmmapmmapmlaN2egaZqmaZqmaZqmaZrWzRlomqZpmqZpmqZpmqZ1cwaapmmapmmapmmapmndnIGmaZqmaZqmaZqmaVo3Z6BpmqZpmqZpmqZpmtbNGWiapmmapmmapmmapnVzBpqmaZqmaZqmaZqmad2cgaZpmqZpmqZpmqZpWjdnoGmapmmapmmapmma1s0ZaJqmaZqmaZqmaZqmdXMGmqZpmqZpmqZpmqZp3ZyBpmmapmmapmmapmlaN2egaZqmaZqmaZqmaZrWzdnRtC7mdDq5+eabGTRoEH6/n9MlIrz00ksUFhZyIXA4HGRkZOB0OmnNsixKSkpobm7mQudyuRg+fDgbN26kpaUFTdM0TdM0TdO07sqOpnUhh8PBQw89RGZmJh2llGL27NlEFRYW0tUyMzPp378/ffv2JSsri4yMDAzDoD0iQkVFBfv376eoqIg9e/awb98+RIQLybRp0/j6179Or169mDdvHudbH7+bm/NSyI5TOA1AAAUIoADhCwoQQPEZ4XMhgd1Bk1e3VbG/uplzxWaz0b9/fyZNmkRubi5er5fOampqYufOnSxZsoTdu3djmibnSg9fJkP6fIOk+H7YDAedZZphqur3sa3obWobitE0TdMuXImJidx888307duXxMREOqOmpob9+/fzpz/9iZqaGrSvHpvNhmmaaFp3pQDhH0AgEOD+++8n6umnn6a0tJRz4f7776dH...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566/screenshot [39m[32m200[39m [90m2052 ms - 353114[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (d70adc6d)][39m Calling AppiumDriver.deleteSession() with args: ["d70adc6d-2877-4ad0-83aa-c0f51bdbb566"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1557758297216 (22:38:17 GMT+0800 (China Standard Time))
+[35m[Appium][39m Removing session d70adc6d-2877-4ad0-83aa-c0f51bdbb566 from our master session list
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[AndroidDriver][39m Resetting IME to com.baidu.input_huawei/.ImeService
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell ime set com.baidu.input_huawei/.ImeService'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell am force-stop com.shenqi.app.client'
+[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell input keyevent 3'
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell pgrep -f \^uiautomator\$'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8BN0218301006604 shell am force-stop io.appium.unlock'
+[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1557758298344 (22:38:18 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (d70adc6d)][39m Received response: null
+[debug] [35m[MJSONWP (d70adc6d)][39m But deleting session, so not returning
+[debug] [35m[MJSONWP (d70adc6d)][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/d70adc6d-2877-4ad0-83aa-c0f51bdbb566 [39m[32m200[39m [90m1130 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[Appium][39m Received SIGTERM - shutting down

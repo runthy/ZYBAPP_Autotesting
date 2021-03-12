@@ -1,0 +1,6 @@
+[2019-06-17 17:29:29] [INFO] 【当前操作系统为：Mac OS X】global.properties 使用的文件连接符号是：//
+[2019-06-17 17:29:29] [INFO] 【当前操作系统为：Mac OS X】caps.properties 使用的文件连接符号是：//
+[2019-06-17 17:29:29] [INFO] [当前操作系统为：Mac OS X执行 mac  shell 命令：] /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -s 741AECQP2DCLA shell "settings get secure default_input_method"
+[2019-06-17 17:29:29] [INFO] 获取设备默认输入法:adb -s 741AECQP2DCLA shell "settings get secure default_input_method"
+[2019-06-17 17:29:29] [INFO] 连接741AECQP2DCLA端口4723
+[2019-06-17 17:29:29] [INFO] 开始创建server连接

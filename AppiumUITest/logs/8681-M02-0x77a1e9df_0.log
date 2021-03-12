@@ -1,0 +1,315 @@
+[35m[Appium][39m Welcome to Appium v1.10.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 4490
+[35m[Appium][39m   bootstrapPort: 2233
+[35m[Appium][39m   udid: 8681-M02-0x77a1e9df
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"8681-M02-0x77a1e9df"}'
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   udid: 8681-M02-0x77a1e9df
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4490
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noReset":"True","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"8681-M02-0x77a1e9df","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noReset":"True","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"8681-M02-0x77a1e9df","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1558507471664 (14:44:31 GMT+0800 (China Standard Time))
+[35m[Appium][39m Creating new AndroidDriver (v4.8.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   udid: 8681-M02-0x77a1e9df
+[35m[Appium][39m   appPackage: com.shenqi.app.client
+[35m[Appium][39m   appActivity: com.shenqi.app.client.MainActivity
+[35m[Appium][39m   noReset: True
+[35m[Appium][39m   noSign: True
+[35m[Appium][39m   newCommandTimeout: 600
+[35m[Appium][39m   unicodeKeyboard: True
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   deviceName: devicename
+[35m[Appium][39m   resetKeyboard: True
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"udid":"8681-M02-0x77a1e9d...
+[35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'newCommandTimeout' changed from string ('600') to integer (600). This may cause unexpected behavior
+[35m[BaseDriver][39m Session created with session id: b595d2a2-0fdc-4c6b-b2d4-1c752618ea47
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Cannot sort build-tools folders ["28.0.3","android-4.4"] by semantic version names.
+[35m[ADB][39m Falling back to sorting by modification date. Original error: Invalid Version: android-4.4
+[35m[ADB][39m Found 2 'build-tools' folders under '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk' (newest first):
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/28.0.3
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/android-4.4
+[35m[ADB][39m Using adb from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[35m[AndroidDriver][39m Using device: 8681-M02-0x77a1e9df
+[debug] [35m[ADB][39m Setting device id to 8681-M02-0x77a1e9df
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 22
+[debug] [35m[ADB][39m Device API level: 22
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.shenqi.app.client directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell pm list packages com.shenqi.app.client'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df wait-for-device'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell dumpsys package io.appium.settings'
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/android-4.4/aapt
+[debug] [35m[ADB][39m The version code of the installed 'io.appium.settings' is greater than the application version code (17 > 15)
+[debug] [35m[ADB][39m There is no need to install/upgrade '/usr/local/lib/node_modules/appium/node_modules/_io.appium.settings@2.12.1@io.appium.settings/apks/settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell 'pidof --help > /dev/null; echo $?''
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell ps'
+[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell settings put secure mock_location 1'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell settings get secure default_input_method'
+[debug] [35m[AndroidDriver][39m Unsetting previous IME com.xinshuru.inputmethod/.FTInputService
+[debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell ime enable io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell ime set io.appium.settings/.UnicodeIME'
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 5.1
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell wm size'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': 8681-M02
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': QiKU
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 2233 to device: 4724
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df forward tcp\:2233 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df push /usr/local/lib/node_modules/appium/node_modules/_appium-android-driver\@4.8.0\@appium-android-driver/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell ps'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","8681-M02-0x77a1e9df","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.shenqi.app.client","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [35m[UiAutomator][39m Moving to state 'online'
+[35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell am start -W -n com.shenqi.app.client/com.shenqi.app.client.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[35m[Appium][39m New AndroidDriver session created successfully, session b595d2a2-0fdc-4c6b-b2d4-1c752618ea47 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1558507480326 (14:44:40 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (b595d2a2)][39m Cached the protocol value 'MJSONWP' for the new session b595d2a2-0fdc-4c6b-b2d4-1c752618ea47
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"8681-M02-0x77a1e9df","appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"devicename","resetKeyboard":true},"udid":"8681-M02-0x77a1e9df","appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noReset":true,"noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"8681-M02-0x77a1e9df","resetKeyboard":true,"deviceUDID":"8681-M02-0x77a1e9df","platformVersion":"5.1","deviceScreenSize":"1080x1920","deviceModel":"8681-M02","deviceManufacturer":"QiKU"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m8669 ms - 961[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":10000}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.timeouts() with args: ["implicit",10000,null,null,null,"b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[BaseDriver][39m MJSONWP timeout arguments: {"type":"implicit","ms":10000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 10000ms
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/timeouts [39m[32m200[39m [90m22 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/elements[39m
+[35m[HTTP][39m [90m{"using":"class name","value":"android.widget.ImageView"}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.findElements() with args: ["class name","android.widget.ImageView","b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.ImageView","context":"","multiple":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.ImageView","context":"","multiple":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'android.widget.ImageView' using 'CLASS_NAME' with the contextId: '' multiple: true
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.ImageView]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.ImageView]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=0]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=1]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=2]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=3]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (4)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=4]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (5)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=5]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (6)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.ImageView, INSTANCE=6]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"1"},{"ELEMENT":"2"},{"ELEMENT":"3"},{"ELEMENT":"4"},{"ELEMENT":"5"},{"ELEMENT":"6"}]}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"1","ELEMENT":"1"},{"element-6066-11e4-a52e-4f735466cecf":"2","ELEMENT":"2"},{"element-6066-11e4-a52e-4f735466cecf":"3","ELEMENT":"3"},{"element-6066-11e4-a52e-4f735466cecf":"4","ELEMENT":"4"},{"element-6066-11e4-a52e-4f735466cecf":"5","ELEMENT":"5"},{"element-6066-11e4-a52e-4f735466cecf":"6","ELEMENT":"6"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/elements [39m[32m200[39m [90m222 ms - 421[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/element/3/click[39m
+[35m[HTTP][39m [90m{"id":"3"}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.click() with args: ["3","b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/element/3/click [39m[32m200[39m [90m225 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/elements[39m
+[35m[HTTP][39m [90m{"using":"class name","value":"android.widget.EditText"}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.findElements() with args: ["class name","android.widget.EditText","b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.EditText","context":"","multiple":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'android.widget.EditText' using 'CLASS_NAME' with the contextId: '' multiple: true
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.EditText]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.EditText]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.EditText, INSTANCE=0]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.widget.EditText, INSTANCE=1]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"7"}]}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"7","ELEMENT":"7"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/elements [39m[32m200[39m [90m1182 ms - 131[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/element/7/value[39m
+[35m[HTTP][39m [90m{"id":"7","value":["13533013009"]}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.setValue() with args: [["13533013009"],"7","b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"7","text":"13533013009","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"7","text":"13533013009","replace":false,"unicodeKeyboard":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using element passed in: 7
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Sending plain text to element: 13533013009
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.setValue() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/element/7/value [39m[32m200[39m [90m5462 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/elements[39m
+[35m[HTTP][39m [90m{"using":"class name","value":"android.view.View"}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.findElements() with args: ["class name","android.view.View","b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 10000 ms for condition
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.view.View","context":"","multiple":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.view.View","context":"","multiple":true}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Finding 'android.view.View' using 'CLASS_NAME' with the contextId: '' multiple: true
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.view.View]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.view.View]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=0]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (1)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=1]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (2)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=2]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (3)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=3]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (4)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=4]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (5)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=5]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (6)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=6]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (7)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=7]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (8)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=8]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (9)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=9]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (10)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=10]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (11)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=11]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (12)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=12]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Element[] is null: (13)
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[CLASS=android.view.View, INSTANCE=13]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"8"},{"ELEMENT":"9"},{"ELEMENT":"10"},{"ELEMENT":"11"},{"ELEMENT":"12"},{"ELEMENT":"13"},{"ELEMENT":"14"},{"ELEMENT":"15"},{"ELEMENT":"16"},{"ELEMENT":"17"},{"ELEMENT":"18"},{"ELEMENT":"19"},{"ELEMENT":"20"}]}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"8","ELEMENT":"8"},{"element-6066-11e4-a52e-4f735466cecf":"9","ELEMENT":"9"},{"element-6066-11e4-a52e-4f735466cecf":"10","ELEMENT":"10"},{"element-6066-11e4-a52e-4f735466cecf":"11","ELEMENT":"11"},{"element-6066-11e4-a52e-4f735466cecf":"12","ELEMENT":"12"},{"element-6066-11e4-a52e-4f735466cecf":"13","ELEMENT":"13"},{"element-6066-11e4-a52e-4f735466cecf":"14","ELEMENT":"14"},{"element-6066-11e4-a52e-4f735466cecf":"15","ELEMENT":"15"},{"element-6066-11e4-a52e-4f735466cecf":"16","ELEMENT":"16"},{"element-6066-11e4-a52e-4f735466cecf":"17","ELEMENT":"17"},{"element-6066-11e4-a52e-4f735466cecf":"18","ELEMENT":"18"},{"element-6066-11e4-a52e-4f735466cecf":"19","ELEMENT":"19"},{"element-6066-11e4-a52e-4f735466cecf":"20","ELEMENT":"20"}]
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/elements [39m[32m200[39m [90m1016 ms - 849[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/element/8/click[39m
+[35m[HTTP][39m [90m{"id":"8"}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.click() with args: ["8","b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"8"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"8"}}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47/element/8/click [39m[32m200[39m [90m130 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (b595d2a2)][39m Calling AppiumDriver.deleteSession() with args: ["b595d2a2-0fdc-4c6b-b2d4-1c752618ea47"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1558507508751 (14:45:08 GMT+0800 (China Standard Time))
+[35m[Appium][39m Removing session b595d2a2-0fdc-4c6b-b2d4-1c752618ea47 from our master session list
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[AndroidDriver][39m Resetting IME to com.xinshuru.inputmethod/.FTInputService
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell ime set com.xinshuru.inputmethod/.FTInputService'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell am force-stop com.shenqi.app.client'
+[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell input keyevent 3'
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] [CDS]close[4724]
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 33.805
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Using ps-based PID detection
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell ps'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 8681-M02-0x77a1e9df shell am force-stop io.appium.unlock'
+[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1558507512710 (14:45:12 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (b595d2a2)][39m Received response: null
+[debug] [35m[MJSONWP (b595d2a2)][39m But deleting session, so not returning
+[debug] [35m[MJSONWP (b595d2a2)][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/b595d2a2-0fdc-4c6b-b2d4-1c752618ea47 [39m[32m200[39m [90m3961 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[Appium][39m Received SIGTERM - shutting down

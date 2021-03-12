@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+        <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+  <test name="8681-M02-0x77a1e9df">
+  		<parameter name="udid" value="127.0.0.1:5557"/>
+        <parameter name="port" value="4723"/>
+    <classes>
+        
+      <class name="com.yjg.appui.testcases.Logintest_002"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

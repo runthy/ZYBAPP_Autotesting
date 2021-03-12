@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>E:\gloryroadwork\CrazyAppium\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cn.crazy.appium.testcases.LxgTest" hash-for-method="signTest">signTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">cn.crazy.appium.testcases.LxgTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signTest">
+                  </a> <!-- signTest -->
+                  <span class="method-name">signTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;hierarchy rotation=&quot;0&quot;&gt;&lt;android.widget.FrameLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.FrameLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[27,705][1053,1289]&quot; resource-id=&quot;&quot; instance=&quot;0&quot;&gt;&lt;android.widget.FrameLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.FrameLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[27,705][1053,1289]&quot; resource-id=&quot;&quot; instance=&quot;1&quot;&gt;&lt;android.widget.FrameLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.FrameLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[27,705][1053,1289]&quot; resource-id=&quot;android:id/content&quot; instance=&quot;2&quot;&gt;&lt;android.widget.LinearLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.LinearLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[51,705][1029,1289]&quot; resource-id=&quot;android:id/parentPanel&quot; instance=&quot;0&quot;&gt;&lt;android.widget.LinearLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.LinearLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[51,705][1029,927]&quot; resource-id=&quot;android:id/topPanel&quot; instance=&quot;1&quot;&gt;&lt;android.widget.LinearLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.LinearLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[123,729][957,921]&quot; resource-id=&quot;android:id/title_template&quot; instance=&quot;2&quot;&gt;&lt;android.widget.TextView index=&quot;0&quot; text=&quot;????&quot; class=&quot;android.widget.TextView&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[123,781][957,869]&quot; resource-id=&quot;android:id/alertTitle&quot; instance=&quot;0&quot;/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.view.View index=&quot;1&quot; text=&quot;&quot; class=&quot;android.view.View&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[75,921][1005,927]&quot; resource-id=&quot;android:id/titleDivider&quot; instance=&quot;0&quot;/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index=&quot;1&quot; text=&quot;&quot; class=&quot;android.widget.LinearLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[51,927][1029,1119]&quot; resource-id=&quot;android:id/contentPanel&quot; instance=&quot;3&quot;&gt;&lt;android.widget.ScrollView index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.ScrollView&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[75,927][1005,1048]&quot; resource-id=&quot;android:id/scrollView&quot; instance=&quot;0&quot;&gt;&lt;android.widget.TextView index=&quot;0&quot; text=&quot;??????&quot; class=&quot;android.widget.TextView&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[75,927][1005,1048]&quot; resource-id=&quot;android:id/message&quot; instance=&quot;1&quot;/&gt;&lt;/android.widget.ScrollView&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index=&quot;2&quot; text=&quot;&quot; class=&quot;android.widget.LinearLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[51,1119][1029,1289]&quot; resource-id=&quot;android:id/buttonPanel&quot; instance=&quot;4&quot;&gt;&lt;android.widget.LinearLayout index=&quot;0&quot; text=&quot;&quot; class=&quot;android.widget.LinearLayout&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;false&quot; enabled=&quot;true&quot; focusable=&quot;false&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[75,1121][1005,1265]&quot; resource-id=&quot;&quot; instance=&quot;5&quot;&gt;&lt;android.widget.Button index=&quot;0&quot; text=&quot;???&quot; class=&quot;android.widget.Button&quot; package=&quot;com.example.lxg&quot; content-desc=&quot;&quot; checkable=&quot;false&quot; checked=&quot;false&quot; clickable=&quot;true&quot; enabled=&quot;true&quot; focusable=&quot;true&quot; focused=&quot;false&quot; scrollable=&quot;false&quot; long-clickable=&quot;false&quot; password=&quot;false&quot; selected=&quot;false&quot; bounds=&quot;[75,1121][1005,1265]&quot; resource-id=&quot;android:id/button1&quot; instance=&quot;0&quot;/&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/hierarchy&gt;Ç©µ½³É¹¦]
+	at cn.crazy.appium.testcases.LxgTest.signTest(LxgTest.java:18)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\gloryroadwork\CrazyAppium\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;192.168.56.101:5555&quot;&gt;
+    &lt;parameter name=&quot;port&quot; value=&quot;4490&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;192.168.56.101:5555&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;cn.crazy.appium.testcases.LxgTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 192.168.56.101:5555 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">192.168.56.101:5555 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'signTest')
+data.setCell(0, 2, 'cn.crazy.appium.testcases.LxgTest')
+data.setCell(0, 3, 11199);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">cn.crazy.appium.testcases.LxgTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeTest(192.168.56.101:5555, 4490)</span>
+                <span class="method-start">13090 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">signTest</span>
+                <span class="method-start">42607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">53821 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

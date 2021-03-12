@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="testTng" basedir="." default="transform">
+
+    <property name="lib.dir" value="lib" />
+
+    <path id=".classpath">
+
+        <!-- adding the saxon jar to your classpath -->
+
+        <fileset dir="${lib.dir}" includes="*.jar" />
+
+    </path>
+
+    <target name="transform">
+
+        <xslt
+            in="E:\WorkPace\ScriptWorkpace\AppiumWorkPace\AppiumTest\CrazyAppium\test-output\testng-results.xml"
+            style="E:\WorkPace\ScriptWorkpace\AppiumWorkPace\AppiumTest\CrazyAppium\test-output\testng-results.xsl"
+
+            out="E:\WorkPace\ScriptWorkpace\AppiumWorkPace\AppiumTest\CrazyAppium/test-output/indexs.html">
+
+            <!-- you need to specify the directory here again -->
+
+            <param name="testNgXslt.outputDir"
+                expression="E:\WorkPace\ScriptWorkpace\AppiumWorkPace\AppiumTest\CrazyAppium/test-output" />
+
+            <classpath refid=".classpath" />
+
+        </xslt>
+
+    </target>
+
+</project>

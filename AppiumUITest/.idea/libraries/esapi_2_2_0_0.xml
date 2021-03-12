@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="esapi-2.2.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/esapi-2.2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jce.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/saxon-8.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scp-common-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

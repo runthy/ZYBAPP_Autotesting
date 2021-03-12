@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="com.yjg.appui.util.ExtentTestNGIReporterListener"/>
+    </listeners>
+    <test name="emulator-5554">
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="port" value="4490"/>
+        <classes>
+            <class name="com.yjg.appui.testcases.kytest_002"/>
+        </classes>
+    </test>
+</suite>

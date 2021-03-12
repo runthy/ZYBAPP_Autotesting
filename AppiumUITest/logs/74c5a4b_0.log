@@ -1,0 +1,211 @@
+[35m[Appium][39m Welcome to Appium v1.10.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 4490
+[35m[Appium][39m   bootstrapPort: 2233
+[35m[Appium][39m   udid: 74c5a4b
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m-U,--udid[39m => --default-capabilities '{"udid":"74c5a4b"}'
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   udid: 74c5a4b
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4490
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"74c5a4b","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":"True","newCommandTimeout":"600","unicodeKeyboard":"True","udid":"74c5a4b","platformName":"Android","deviceName":"devicename","resetKeyboard":"True"},null,null]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1557763447765 (00:04:07 GMT+0800 (China Standard Time))
+[35m[Appium][39m Creating new AndroidDriver (v4.8.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   udid: 74c5a4b
+[35m[Appium][39m   appPackage: com.shenqi.app.client
+[35m[Appium][39m   appActivity: com.shenqi.app.client.MainActivity
+[35m[Appium][39m   noSign: True
+[35m[Appium][39m   newCommandTimeout: 600
+[35m[Appium][39m   unicodeKeyboard: True
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   deviceName: devicename
+[35m[Appium][39m   resetKeyboard: True
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"udid":"74c5a4b","appPacka...
+[35m[BaseDriver][39m Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'newCommandTimeout' changed from string ('600') to integer (600). This may cause unexpected behavior
+[35m[BaseDriver][39m Session created with session id: 2c28d584-a564-4ba7-940d-006af739f670
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Cannot sort build-tools folders ["28.0.3","android-4.4"] by semantic version names.
+[35m[ADB][39m Falling back to sorting by modification date. Original error: Invalid Version: android-4.4
+[35m[ADB][39m Found 2 'build-tools' folders under '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk' (newest first):
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/28.0.3
+[35m[ADB][39m     /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/android-4.4
+[35m[ADB][39m Using adb from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[35m[AndroidDriver][39m Using device: 74c5a4b
+[debug] [35m[ADB][39m Setting device id to 74c5a4b
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 23
+[debug] [35m[ADB][39m Device API level: 23
+[35m[AndroidDriver][39m Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.shenqi.app.client directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell pm list packages com.shenqi.app.client'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b wait-for-device'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell dumpsys package io.appium.settings'
+[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell dumpsys package io.appium.settings'
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt from /Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/build-tools/android-4.4/aapt
+[debug] [35m[ADB][39m The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('2.12.1' >= '2.12.1')
+[debug] [35m[ADB][39m There is no need to install/upgrade '/usr/local/lib/node_modules/appium/node_modules/_io.appium.settings@2.12.1@io.appium.settings/apks/settings_apk-debug.apk'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell 'pgrep --help; echo $?''
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell pgrep -f \^io\\.appium\\.settings\$'
+[35m[AndroidDriver][39m Granting android.permission.SET_ANIMATION_SCALE, CHANGE_CONFIGURATION, ACCESS_FINE_LOCATION by pm grant
+[debug] [35m[ADB][39m Granting permissions ["android.permission.SET_ANIMATION_SCALE","android.permission.CHANGE_CONFIGURATION","android.permission.ACCESS_FINE_LOCATION"] to 'io.appium.settings'
+[debug] [35m[ADB][39m Got the following command chunks to execute: [["pm","grant","io.appium.settings","android.permission.SET_ANIMATION_SCALE",";","pm","grant","io.appium.settings","android.permission.CHANGE_CONFIGURATION",";","pm","grant","io.appium.settings","android.permission.ACCESS_FINE_LOCATION",";"]]
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell pm grant io.appium.settings android.permission.SET_ANIMATION_SCALE \; pm grant io.appium.settings android.permission.CHANGE_CONFIGURATION \; pm grant io.appium.settings android.permission.ACCESS_FINE_LOCATION \;'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell appops set io.appium.settings android\:mock_location allow'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Enabling Unicode keyboard support
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell settings get secure default_input_method'
+[debug] [35m[AndroidDriver][39m Unsetting previous IME com.sohu.inputmethod.sogouoem/.SogouIME
+[debug] [35m[AndroidDriver][39m Setting IME to 'io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell ime enable io.appium.settings/.UnicodeIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell ime set io.appium.settings/.UnicodeIME'
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 6.0.1
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell wm size'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': OPPO A57
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': OPPO
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.shenqi.app.client
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell dumpsys package com.shenqi.app.client'
+[debug] [35m[ADB][39m 'com.shenqi.app.client' is installed
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell am force-stop com.shenqi.app.client'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell pm clear com.shenqi.app.client'
+[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.shenqi.app.client' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 2233 to device: 4724
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b forward tcp\:2233 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b push /usr/local/lib/node_modules/appium/node_modules/_appium-android-driver\@4.8.0\@appium-android-driver/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell pgrep -f \^uiautomator\$'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","74c5a4b","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.shenqi.app.client","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [35m[UiAutomator][39m Moving to state 'online'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell am start -W -n com.shenqi.app.client/com.shenqi.app.client.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[35m[Appium][39m New AndroidDriver session created successfully, session 2c28d584-a564-4ba7-940d-006af739f670 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1557763463592 (00:04:23 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (2c28d584)][39m Cached the protocol value 'MJSONWP' for the new session 2c28d584-a564-4ba7-940d-006af739f670
+[debug] [35m[MJSONWP (2c28d584)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"74c5a4b","appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"devicename","resetKeyboard":true},"udid":"74c5a4b","appPackage":"com.shenqi.app.client","appActivity":"com.shenqi.app.client.MainActivity","noSign":true,"newCommandTimeout":600,"unicodeKeyboard":true,"platformName":"Android","deviceName":"74c5a4b","resetKeyboard":true,"deviceUDID":"74c5a4b","platformVersion":"6.0.1","deviceScreenSize":"720x1280","deviceModel":"OPPO A57","deviceManufacturer":"OPPO"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m15834 ms - 884[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":10000}[39m
+[debug] [35m[MJSONWP (2c28d584)][39m Calling AppiumDriver.timeouts() with args: ["implicit",10000,null,null,null,"2c28d584-a564-4ba7-940d-006af739f670"]
+[debug] [35m[BaseDriver][39m MJSONWP timeout arguments: {"type":"implicit","ms":10000}}
+[debug] [35m[BaseDriver][39m Set implicit wait to 10000ms
+[debug] [35m[MJSONWP (2c28d584)][39m Responding to client with driver.timeouts() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670/timeouts [39m[32m200[39m [90m20 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670/element[39m
+[35m[HTTP][39m [90m{"using":"name","value":"本机号码一键登录"}[39m
+[debug] [35m[MJSONWP (2c28d584)][39m Calling AppiumDriver.findElement() with args: ["name","本机号码一键登录","2c28d584-a564-4ba7-940d-006af739f670"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[MJSONWP (2c28d584)][39m Encountered internal error running command: InvalidSelectorError: Locator Strategy 'name' is not supported for this session
+[debug] [35m[MJSONWP (2c28d584)][39m     at AndroidDriver.validateLocatorStrategy (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:344:13)
+[debug] [35m[MJSONWP (2c28d584)][39m     at AndroidDriver.helpers.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:28:8)
+[debug] [35m[MJSONWP (2c28d584)][39m     at AndroidDriver.commands.findElement (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/commands/find.js:50:21)
+[debug] [35m[MJSONWP (2c28d584)][39m     at curCommandCancellable._bluebird.default.resolve.then (/usr/local/lib/node_modules/appium/node_modules/_appium-base-driver@3.13.2@appium-base-driver/lib/basedriver/driver.js:291:18)
+[debug] [35m[MJSONWP (2c28d584)][39m     at tryCatcher (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/util.js:26:23)
+[debug] [35m[MJSONWP (2c28d584)][39m     at Promise._settlePromiseFromHandler (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:510:31)
+[debug] [35m[MJSONWP (2c28d584)][39m     at Promise._settlePromiseAt (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:584:18)
+[debug] [35m[MJSONWP (2c28d584)][39m     at Promise._settlePromiseAtPostResolution (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/promise.js:248:10)
+[debug] [35m[MJSONWP (2c28d584)][39m     at Async._drainQueue (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:128:12)
+[debug] [35m[MJSONWP (2c28d584)][39m     at Async._drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:133:10)
+[debug] [35m[MJSONWP (2c28d584)][39m     at Immediate.Async.drainQueues (/usr/local/lib/node_modules/appium/node_modules/_bluebird@2.11.0@bluebird/js/main/async.js:15:14)
+[debug] [35m[MJSONWP (2c28d584)][39m     at runCallback (timers.js:705:18)
+[debug] [35m[MJSONWP (2c28d584)][39m     at tryOnImmediate (timers.js:676:5)
+[debug] [35m[MJSONWP (2c28d584)][39m     at processImmediate (timers.js:658:5)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670/element [39m[31m500[39m [90m13 ms - 144[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (2c28d584)][39m Calling AppiumDriver.getScreenshot() with args: ["2c28d584-a564-4ba7-940d-006af739f670"]
+[35m[AndroidDriver][39m Cannot get screenshot data with 'adb exec-out' because of 'Command '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b exec-out /system/bin/screencap -p' exited with code 1'. Defaulting to 'adb shell' call
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell /system/bin/rm /data/local/tmp/screenshot.png\; /system/bin/screencap -p /data/local/tmp/screenshot.png'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell ls -la /data/local/tmp/screenshot.png'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b pull /data/local/tmp/screenshot.png /var/folders/s6/pgcj1l550z31yv_60yhw4m4h0000gp/T/appium119414-2488-z0ydua.b029c.png'
+[debug] [35m[MJSONWP (2c28d584)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtAAAAUACAYAAABuzmU9AABm1klEQVR4AezBC9gYdkHY69/3z9dcmzZtml7S0jRtKbRQWiiXiSDCOty8PKKgnLFNh8oQES9HJsqOVxSHyuYN8La54YbTM5A5zkBUlAl06LhUKC2l95beU9qmSdM0ac6zz+eJT55c+i9NKej7vgt73rNpTwAAwJQRAAAwbQQAAEwbAQAA00YAAMC0EQAAMG0EAABMGwF/+yyuqeXra2GxL3mrTqk1m2usaB+rTu3zsrDYgzrq3DryrL6kbLiw1j+7L0mrN9e6C+qIdT1iTnpBnfT1fUlY95SmLF9fp7y4FhabsnJjwOExAh4dq06pk19Uq07psDvz1fXcj9Sqk/uScfw/qCf/eh33nPZx1g/Xs/60Vp3SXsc8rb78D+u8N9XqTT0k5/1KPet9tfzYDurJv16P/5G+pJzzujrrNX1JOv2V9Yy317qn9ojZ/PI67WV90Xv8j9Qz3l6nfmsP6olvqCe8oU7/rh7U2a+rv/f7dfT5AQ/fYkAtrq3lx3ZY7Lyjdm1tH8uPq2P/Xh39pDry8XXkY2vlidVCffqnatmqOu55TfnwN7SfjS+s5cfUNb/Zfk55SR1/YQ/JPZ+uy9/QXme9psbyDov776wrf7n9HPeVdfzz68Z3to81m2vX3bXtyvbas7u2XlInfk0d95y67j/UVW+u3ds7pOXH1vpn1/araucdHVanvKSOv7CHZdfW+qvvjS8ij/+xWlzbYXf5v66dt7efG99RG19UZ/1wbbuytnygAzrje2rDhXX3JXXtv+tB3fGBOvkb6yn/ri7+rrrjw7Xq1Drje3pIbn1v3fre4O+6xYDa+A119k92WHzqtXX929rrvF+pE/5RLSxrr7surtv+pO78WN3xwTrz1XXUE+r293dQRz62Vp/WAW14Xq3eVNf8ZvtZfkytPrX9rNpUu7bW/Xe0n/vvbB+nfmstW91hce8NdeUvt5+jn1S7d9SW97fXwmKt...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670/screenshot [39m[32m200[39m [90m1730 ms - 35254[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP (2c28d584)][39m Calling AppiumDriver.deleteSession() with args: ["2c28d584-a564-4ba7-940d-006af739f670"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1557763485528 (00:04:45 GMT+0800 (China Standard Time))
+[35m[Appium][39m Removing session 2c28d584-a564-4ba7-940d-006af739f670 from our master session list
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[AndroidDriver][39m Resetting IME to com.sohu.inputmethod.sogouoem/.SogouIME
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell ime set com.sohu.inputmethod.sogouoem/.SogouIME'
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell am force-stop com.shenqi.app.client'
+[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell input keyevent 3'
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] Time: 27.078
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] OK (1 test)
+[debug] [35m[AndroidBootstrap][39m [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting IDs of all 'uiautomator' processes
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell pgrep -f \^uiautomator\$'
+[35m[ADB][39m No 'uiautomator' process has been found
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running '/Users/neo.shi/Soft/WorkSoft/adt-bundle-mac-x86_64-20131030/sdk/platform-tools/adb -P 5037 -s 74c5a4b shell am force-stop io.appium.unlock'
+[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1557763489351 (00:04:49 GMT+0800 (China Standard Time))
+[debug] [35m[MJSONWP (2c28d584)][39m Received response: null
+[debug] [35m[MJSONWP (2c28d584)][39m But deleting session, so not returning
+[debug] [35m[MJSONWP (2c28d584)][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/2c28d584-a564-4ba7-940d-006af739f670 [39m[32m200[39m [90m3826 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[Appium][39m Received SIGTERM - shutting down

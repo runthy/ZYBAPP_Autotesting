@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="8681-M02-0x77a1e9df">
+        <parameter name="udid" value="8681-M02-0x77a1e9df"/>
+        <parameter name="port" value="4490"/>
+        <classes>
+            <class name="cn.crazy.appium.testcases.Logintest_001"/>
+        </classes>
+    </test>
+    <test name="9889d6475838564a56">
+                <parameter name="udid1" value="9889d6475838564a56"/>
+       		    <parameter name="port1" value="4491"/>
+              <classes>
+            <class name="cn.crazy.appium.testcases.Logintest_002"/>
+        </classes>
+    </test>
+</suite>
